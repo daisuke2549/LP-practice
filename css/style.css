@@ -2,12 +2,14 @@
 @import url("grid.css");
 
 img {
-	max-width:100%;
-	height: auto;/*高さ自動*/
+    max-width:100%;
+    width:200px;
+    height: auto;
 }
 a {
     display:block;
     color: #666;
+
     text-decoration-line: none;
 }
 a:hover { 
@@ -112,6 +114,31 @@ section {
 	background-color: #f4f4f4;
 }
 
+/*スライダートップイメージ
+-------------------------------------*/
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
+.swiper-slide img{
+    width:100%;
+    height:100%;
+}
+
+.swiper-button-prev{
+    color:white;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	width: 48px; /* ボタンの幅 */
+	height: 48px; /* ボタンの高さ */
+	background-size: 48px 48px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
+	margin-top: -24px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+}
+
+
+
+
 /*キャッチコピー
 -------------------------------------*/
 .catch {
@@ -135,6 +162,61 @@ section {
 	margin-bottom: 3rem;
 }
 
+
+/*　商品一覧
+-------------------------------------*/
+.item-list{
+    display: flex;
+ 
+
+}
+.item{
+    margin:auto;
+}
+
+
+/*　スタッフ一覧
+-------------------------------------*/
+.staff-list{
+    display: flex;
+
+}
+.staff{
+    margin:auto;
+}
+.staff img{
+    opacity: 1;
+    background: #ffafbd;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.staff img:hover{
+    opacity: 0.7;
+}
+
+
+/*　サービス一覧
+-------------------------------------*/
+.service-list{
+    display: flex;
+}
+.service{
+    margin:auto;
+}
+.service img{
+    width:200px;
+    height:200px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.service img:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+
 /*フッター
 -------------------------------------*/
 footer {
@@ -152,6 +234,11 @@ footer h4 {
 	text-align: center;
 	padding: 2rem 0;
 }
+
+.contact-box img{
+    transform: rotateZ(20deg);
+}
+
 .table {
 	margin: 4rem 0;
 }

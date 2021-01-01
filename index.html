@@ -12,7 +12,10 @@
 <link rel="stylesheet" media="all" href="./css/style.css" />
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="./js/main.js"></script>
-	
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="img/favicon.png">
     
@@ -22,7 +25,7 @@
 <div class="container">
 <div class="row">
     <div class="col span-12 header">
-        <h1><a href="">LOGO</a></h1>
+        <h1><a href="">Coffee cafe</a></h1>
 		<div class="header-box"><a href=""><span class="contact-button">お問い合わせ</span></a></div>
         </div>
     </div>
@@ -30,13 +33,13 @@
     <div class="col span-12">
         <nav>
         <div id="open"><img src="img/button.png"></div>
-        <div id="close"><img src="img/button2.png"></div>    
+        <div id="close"><img src="img/button.png"></div>    
             <div id="navi">
         <ul>
             <li><a href="index.html">ホーム</a></li>
-            <li><a href="#1">サービスについて</a></li>
-            <li><a href="#2">お客様の声</a></li>
-            <li><a href="#3">申し込みの流れ</a></li>
+            <li><a href="#1">商品一覧</a></li>
+            <li><a href="#2">スタッフ紹介</a></li>
+            <li><a href="#3">店舗内サービス</a></li>
             <li><a href="#4">アクセス</a></li>
             <li><a href="#5">お問い合わせ</a></li>
          </ul>
@@ -47,31 +50,55 @@
     </div>
     </div>
 </header>
-    <div class="mainimg">
-              <img src="img/top-image.jpg" alt="メイン画像">  
-        </div>
+<!-- Slider全体のコンテナ -->
+<div class="swiper-container">
+  <!-- Sliderの内包コンテナ -->
+  <div class="swiper-wrapper">
+      <!-- Slideさせたいコンテンツ -->
+      <div class="swiper-slide"><img src="./img/top-image.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/top-image2.jpeg" alt=""><</div>
+      <div class="swiper-slide"><img src="./img/top-image3.jpeg" alt=""><</div>
+  </div>
+  <!-- ページネーション（※省略可） -->
+  <div class="swiper-pagination"></div>
+  <!-- ナビゲーションボタン（※省略可） -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- スクロールバー（※省略可） -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+
     <main>
         <div class="catch">
         <h2><span class="under">キャッチフレーズ</span></h2>
-        <p>ここにキャッチコピーが入ります。<br>お店の宣伝やコンセプトなど。魅せる文言を入力。</p>
+        <p>お客様へ最高の飲みものを提供し、満足度100%を目指します！</p>
         </div>
         
 <section id="1" class="gray-back">
-        <h2 class="center"><span class="under">商品について</span></h2>
+        <h2 class="center"><span class="under">商品一覧</span></h2>
 <div class="container center">
-<div class="row">
-    <div class="col span-4">
-		<img src="img/product.jpg" alt="ここに商品">
+<div class="item-list">
+    <div class="item">
+		<img src="img/coffee-ore.jpg" alt="ここに商品">
 		<h3>ここに商品が入ります</h3>
 		<p>ここに説明文が入ります</p>
     </div>
-    <div class="col span-4">
-		<img src="img/product.jpg" alt="ここに商品">
+    <div class="item">
+      <img src="img/coffee.jpg" alt="ここに商品">
+      <h3>ここに商品が入ります</h3>
+      <p>ここに説明文が入ります</p>
+      </div>
+    <div class="item">
+		<img src="img/lemon.jpg" alt="ここに商品">
 		<h3>ここに商品が入ります</h3>
 		<p>ここに説明文が入ります</p>
     </div>
-    <div class="col span-4">
-		<img src="img/product.jpg" alt="ここに商品">
+    <div class="item">
+		<img src="img/green.jpg" alt="ここに商品">
 		<h3>ここに商品が入ります</h3>
 		<p>ここに説明文が入ります</p>
     </div>
@@ -82,51 +109,50 @@
 <section id="2">
         <h2 class="center"><span class="under">スタッフ紹介</span></h2>
 <div class="container center">
-<div class="row">
-    <div class="col span-4">
-		<img src="img/staff.jpg" alt="スタッフ">
-		<h3>スタッフ</h3>
-		<p>ここに説明文が入ります</p>
+<div class="staff-list">
+    <div class="staff">
+		<img src="img/staff1.jpg" alt="スタッフ">
+		<h3>スタッフ①</h3>
+		<p>店長</p>
     </div>
-    <div class="col span-4">
-		<img src="img/staff.jpg" alt="スタッフ">
-		<h3>スタッフ</h3>
-		<p>ここに説明文が入ります</p>
+    <div class="staff">
+      <img src="img/staff5.jpg" alt="スタッフ">
+      <h3>スタッフ②</h3>
+      <p>店員</p>
+      </div>
+    <div class="staff">
+		<img src="img/staff2.jpeg" alt="スタッフ">
+		<h3>スタッフ③</h3>
+		<p>店員</p>
     </div>
-    <div class="col span-4">
-		<img src="img/staff.jpg" alt="スタッフ">
-		<h3>スタッフ</h3>
-		<p>ここに説明文が入ります</p>
+    <div class="staff">
+		<img src="img/staff4.jpg" alt="スタッフ">
+		<h3>スタッフ④</h3>
+		<p>店員</p>
     </div>
     </div>
 	</div>
 </section>
 		
 <section id="3" class="gray-back">
-        <h2 class="center"><span class="under">申し込みの流れ</span></h2>
-<div class="container">
-<div class="row flow">
-    <div class="col span-3">
-		<img src="img/flow.jpg" alt="申し込み">
+        <h2 class="center"><span class="under">店舗内サービス</span></h2>
+<div class="service-list">
+  <div class="service">
+		<img src="img/wifi.jpg" alt="スタッフ">
+		<h3>wifi</h3>
+		<p>店内で高速wifiが使用です。</p>
     </div>
-    <div class="col span-9"><p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+    <div class="service">
+      <img src="img/pc.jpeg" alt="スタッフ">
+      <h3>PC持ち込み</h3>
+      <p>PCを持ち込み可能です</p>
+      </div>
+      <div class="service">
+		<img src="img/charger.jpg" alt="スタッフ">
+		<h3>充電器貸し出し</h3>
+		<p>PC、スマホの充電が可能です</p>
     </div>
-    </div>	
-<div class="row flow">
-    <div class="col span-3">
-		<img src="img/flow.jpg" alt="申し込み">
-    </div>
-    <div class="col span-9"><p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
-    </div>
-    </div>
-<div class="row flow">
-    <div class="col span-3">
-		<img src="img/flow.jpg" alt="申し込み">
-    </div>
-    <div class="col span-9"><p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
-    </div>
-    </div>
-	</div>
+ </div>
 </section>
 		
 <section id="4">
@@ -185,8 +211,24 @@
 </div>
     </footer>
     <div class="copyright">
-    <a href="https://popo-design.net" target="_blank">Copyright © popodesign.</a> 
+    <a href="https://popo-design.net" target="_blank">Copyright virtual cafe</a> 
         </div>
     <p id="pagetop"><a href="#">TOP</a></p>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    // ここからオプション
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  </script>
 </body>
 </html>

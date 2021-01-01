@@ -22,3 +22,23 @@ $(document).ready(function () {
       });
 
     });
+    $(function(){
+      $("#open").show();
+      $("#close").hide();
+
+$("#open").click(function(){
+
+  $("#navi").slideToggle();
+      $("#open").hide();
+      $("#close").show();
+});
+      
+
+$("#close").click(function(){
+  
+  $("#navi").slideToggle();
+      $("#open").show();
+      $("#close").hide();
+});
+
+});
