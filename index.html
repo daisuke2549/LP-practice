@@ -175,40 +175,63 @@
 		
 <section id="5">
   <h2 class="center"><span class="under">お問い合わせ</span></h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <form action="https://api.staticforms.xyz/submit" method="post">
-          <input type="hidden" name="accessKey" value="アクセスキー">
-          <input type="hidden" name="subject" value="件名">
-          <input type="hidden" name="redirectTo" value="絶対パス">
-          <div class="form-group row">
-            <label for="inputName" class="col-sm-4 col-form-label">お名前</label>
-            <div class="col-sm-8">
-              <input type="text" name="name" class="form-control" id="inputName">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputEmail" class="col-sm-4 col-form-label">メールアドレス</label>
-            <div class="col-sm-8">
-              <input type="text" name="email" class="form-control" id="inputEmail">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputTextarea" class="col-sm-4 col-form-label">メッセージ</label>
-            <div class="col-sm-8">
-              <textarea name="message" rows="3" class="form-control" id="inputTextarea"></textarea>
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary mb-2">送信</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <p class="end-message">お問い合わせありがとうございました</p>
-  <p class="false-message">送信失敗です</p>
+  <div class="contact__item">
+    <form action="#">
+      <dl class="contact__controls">
+        <div class="contact__control">
+          <dt>
+            <label class="contact__label contact__label--required" for="your-name">お名前</label>
+          </dt>
+          <dd>
+            <input id="your-name" class="form-input" type="text" name="your-name" value="" placeholder="山田　太郎" required>
+          </dd>
+        </div><!-- /.contact__control -->
+        <div class="contact__control">
+          <dt>
+            <label class="contact__label contact__label--required" for="your-mail">メールアドレス</label>
+          </dt>
+          <dd>
+            <input id="your-mail" class="form-input" type="email" name="your-mail" value="" placeholder="text@example.com" required>
+          </dd>
+        </div><!-- /.contact__control -->
+        <div class="contact__control">
+          <dt>
+            <label class="contact__label" for="your-kind">お問い合わせ種別</label>
+          </dt>
+          <dd>
+            <select id="your-kind" class="form-select">
+              <option value="">ーーー</option>
+              <option value="a">セレクトA</option>
+              <option value="b">セレクトB</option>
+              <option value="c">セレクトC</option>
+            </select>
+          </dd>
+        </div><!-- /.contact__control -->
+        <div class="contact__control">
+          <dt>
+            <label class="contact__label" for="your-message">お問い合わせ内容</label>
+          </dt>
+          <dd>
+            <textarea id="your-message" class="form-textarea" name="your-message" placeholder="お問い合わせを入力してください"></textarea>
+          </dd>
+        </div><!-- /.contact__control -->
+      </dl><!-- /.contact__controls -->
+      <div class="contact__radio">
+        <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio" checked><span>ラジオ１</span></label>
+        <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ２</span></label>
+        <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ３</span></label>
+      </div><!-- /.contact__radio -->
+      <div class="contact__check">
+        <label>
+          <input class="form-checkbox" type="checkbox" name="your-checkbox" required>
+
+          <span><a href="">プライバシーポリシー</a>に合意する</span>
+
+        </label>
+      </div><!-- /.contact__check -->
+      <div class="contact__submit"><input class="button-arrow-right" type="submit" value="送信する"></div><!-- /.contact__submit -->
+    </form>
+  </div><!-- /.contact__item -->
 
 </section>
         
