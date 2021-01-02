@@ -177,23 +177,39 @@
   <h2 class="center"><span class="under">お問い合わせ</span></h2>
   <div class="container">
     <div class="row">
-        <div class="col span-6">
-        <div class="contact-box">
-        <p><img src="img/tel.png" alt="電話"></p>
-        <p>012-345-6789</p>
-        </div>
-        </div>
-      <div class="col span-6">
-        <div class="contact-box">
-        <p><img src="img/mail.png" alt="Eメール"></p>
-        <p>simple@mail.com</p>
-        </div>
-        </div>
-        </div>	
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScmiDV_0N647KVK8WEUeBmvUd86y6M7QxDX4kdKjDfmgG_A6Q/viewform?embedded=true" width="100%" height="1151"  marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      <div class="col-md-12">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+          <input type="hidden" name="accessKey" value="アクセスキー">
+          <input type="hidden" name="subject" value="件名">
+          <input type="hidden" name="redirectTo" value="絶対パス">
+          <div class="form-group row">
+            <label for="inputName" class="col-sm-4 col-form-label">お名前</label>
+            <div class="col-sm-8">
+              <input type="text" name="name" class="form-control" id="inputName">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-sm-4 col-form-label">メールアドレス</label>
+            <div class="col-sm-8">
+              <input type="text" name="email" class="form-control" id="inputEmail">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputTextarea" class="col-sm-4 col-form-label">メッセージ</label>
+            <div class="col-sm-8">
+              <textarea name="message" rows="3" class="form-control" id="inputTextarea"></textarea>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary mb-2">送信</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <p class="end-message">お問い合わせありがとうございました</p>
   <p class="false-message">送信失敗です</p>
-</div>	
+
 </section>
         
     </main>
