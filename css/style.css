@@ -85,7 +85,8 @@ nav a {
 }
 .header h1{
    border: none;
-
+   left:25%;
+   position: relative;
 }
 .header #open,#close  {
     position: absolute;
