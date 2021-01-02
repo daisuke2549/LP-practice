@@ -405,11 +405,7 @@ footer h4 {
   padding: 0;
 }
 
-@media (max-width: 767px) {
-  .contact__radio {
-    margin-top: 26px;
-  }
-}
+
 
 .contact__radio-item {
   margin-right: 32px;
@@ -419,24 +415,15 @@ footer h4 {
   margin-right: 0;
 }
 
-@media (max-width: 767px) {
-  .contact__radio-item {
-    margin-bottom: 16px;
-    margin-right: 0;
-    display: block;
-  }
-}
+
 
 .contact__check {
   margin-top: 58px;
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .contact__check {
-    margin-top: 24px;
-  }
-}
+
+
 
 .contact__check a {
   color: #333;
