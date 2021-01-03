@@ -25,12 +25,14 @@ a:hover {
 	display: flex;
     flex-direction: row;
     padding: 2rem 0 0 0;
+    text-align: center;
 }
 .header h1{
-    padding: 0.5em 0;/*上下の余白*/
-    border-top: solid 3px #364e96;/*上線*/
-    border-bottom: solid 3px #364e96;/*下線*/
+    left:45%;
+    position: relative;
+    margin-bottom: 10px;
 }
+
 #header-title:hover{
     color:#364e96;;
 }
@@ -91,7 +93,40 @@ nav a {
 
 }
 
+ @media screen and (min-width:769px) and ( max-width:899px) {
 
+    #open,#close {
+        display: none !important;
+    }
+    
+    #navi {
+        display: block !important;
+    }
+    nav ul {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin: 1rem 0 0 0;
+    }
+    nav li {
+        flex: 1 0 auto;
+    }
+    nav li a {
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+    }
+    nav a:hover {
+        background-color: #f7f7f7;    
+    }
+    nav a {
+        padding: 0.5rem;
+    }
+        
+}   
+  
 
 
 @media screen and (max-width: 768px){
@@ -101,6 +136,7 @@ nav a {
     text-align: center;
 }
 .header h1{
+    
    border: none;
    position: relative;
 }
@@ -396,6 +432,8 @@ footer h4 {
   left: 0;
 }
 
+
+
 @media (max-width: 767px) {
   .contact__label--required::after {
     top: 50%;
@@ -420,15 +458,11 @@ footer h4 {
 }
 
 
-
-
-
 .contact__check {
   margin-top: 58px;
   text-align: center;
 
 }
-
 
 
 
@@ -487,6 +521,10 @@ footer h4 {
     font-size: 24px;
     font-style: italic;
 }
+.copyright p:hover {
+    color:#F00;
+}
+
 
 /*ページトップへ戻るボタン
 -------------------------------------*/
@@ -513,11 +551,24 @@ footer h4 {
 	
 /*ヘッダー
 -------------------------------------*/
+
+
+.header {
+	display: flex;
+    flex-direction: row;
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+
 .header-box {
     display: none;
 }	
+
 .header h1{
+    left:30%;
+    position: relative;    
     margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 
@@ -624,3 +675,16 @@ footer h4 {
 }
 
 }
+
+
+@media screen and (min-width:760px) and ( max-width:770px) { 
+
+
+    .header h1{
+        left:40%;
+        position: relative;    
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+
+}  
