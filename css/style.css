@@ -47,8 +47,13 @@ a:hover {
     transform: scale(1.2, 1.2);
 }
 
+nav{
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
 
 nav ul {
+
 	display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -169,6 +174,11 @@ section {
 .catch h2 {
     padding-bottom: 1rem;
 }
+
+.catch p{
+    margin-top: 20px;
+}
+
 .under {
     border-bottom: 0.4rem solid #000;
     padding:0 1rem 1rem 1rem;
@@ -485,8 +495,22 @@ footer h4 {
 /*ヘッダー
 -------------------------------------*/
 .header-box {
-	display: none;
+    display: none;
 }	
+.header h1{
+    margin-top: -20px;
+}
+
+
+/*キャッチコピー
+-------------------------------------*/
+
+.catch p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
 /*商品一覧
 -------------------------------------*/
 
