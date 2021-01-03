@@ -153,4 +153,5 @@ $.fn.textAnimation = function(options) {
 	});
 };
 
+
 }(jQuery,this));
