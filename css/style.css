@@ -36,7 +36,7 @@ a:hover {
     text-align: center;
 }
 
-#header-title:hover{
+.header h1:hover{
     color:#364e96;;
 }
 
